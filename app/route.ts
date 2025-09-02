@@ -75,3 +75,5 @@ export async function DELETE(request: Request) {
     return new NextResponse(err.message || 'Failed to delete customer', { status: 500 });
   }
 }
+export const runtime = "nodejs";
+
