@@ -11,10 +11,12 @@
     "noEmit": true,
     "incremental": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "ignoreDeprecations": "6.0",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": ".", // Added baseUrl to enable non-relative paths
     "paths": {
       "@/*": ["./*"],
       "@lib/*": ["lib/*"],
